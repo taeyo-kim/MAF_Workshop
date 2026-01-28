@@ -8,6 +8,10 @@ https://learn.microsoft.com/en-us/agent-framework/tutorials/overview
 
 ## 🪄 Agent 실습
 
+#### MAF 개요
+- [**Overview.ipynb**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
+- [**Agent-Type.ipynb**](MAF/Agent-Type.ipynb) - 에이전트 유형 및 기능
+
 #### 기본 설정 및 시작하기
 - [**0.Prerequisite.ipynb**](MAF/0.Prerequisite.ipynb) - 사전 준비 사항 및 환경 설정
 - [**1.CreateAgnet.ipynb**](MAF/1.CreateAgnet.ipynb) - 에이전트 생성 기초
