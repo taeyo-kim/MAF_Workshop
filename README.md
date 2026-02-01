@@ -1,4 +1,4 @@
-# MAF Workshop (updated 01.28.2026)
+# MAF Workshop (updated 02.01.2026)
 
 ## 🤖 Microsoft Agent Framework(MAF) V2 가벼운 실습
 
