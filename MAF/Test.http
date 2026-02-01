@@ -1,0 +1,5 @@
+POST https://aif-taeyok.services.ai.azure.com/api/projects/proj-default/applications/CoffeeExpert/protocols/openai/responses?api-version=2025-11-15-preview HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer <YOUR_ACCESS_TOKEN>
+
+{"input":"Say hello"}
