@@ -1,4 +1,4 @@
-# MAF Workshop (updated 02.01.2026)
+# MAF Workshop (updated 02.02.2026)
 
 ## 🤖 Microsoft Agent Framework(MAF) V2 가벼운 실습
 
@@ -46,4 +46,8 @@ https://learn.microsoft.com/en-us/agent-framework/tutorials/overview
 - [**21.SimpleSequentialWorkflow.ipynb**](21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
 - [**22.Agents-In-Workflow.ipynb**](22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
 
+---
+
+## ✨DevUI 사용방법 안내
+- 📢 [**DevUI/intro.ipynb**](MAF/DevUI/intro.ipynb) - DevUI : 에이전트 및 워크플로우 테스트 앱.
 ---
