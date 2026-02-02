@@ -37,8 +37,8 @@ https://learn.microsoft.com/en-us/agent-framework/tutorials/overview
 
 ---
 ## ✨Microsoft Foundry 연동 Agent 실습
-- 📢 [**AzureAIFoundryAgent.ipynb**](AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용(**Classic과 New Portal 모두 포함**)
-- 📢 [**Using-Published-Agent.ipynb**](Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기
+- 📢 [**AzureAIFoundryAgent.ipynb**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용(**Classic과 New Portal 모두 포함**)
+- 📢 [**Using-Published-Agent.ipynb**](MAF/Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기
 
 ---
 
