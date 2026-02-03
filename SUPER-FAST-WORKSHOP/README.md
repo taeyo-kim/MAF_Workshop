@@ -88,6 +88,8 @@ pip install jupyterlab
 python -m jupyter lab
 ```
 
+> 💡 토큰을 입력하라고 뜨면 터미널창의 주소에 있는 토큰을 복사해서 붙여넣습니다. 
+
 > 💡 브라우저가 자동으로 열리지 않으면 http://localhost:8888 로 접속하세요.
 
 ### Step 3. 워크샵 저장소 클론
