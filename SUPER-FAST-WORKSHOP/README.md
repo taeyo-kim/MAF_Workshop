@@ -22,11 +22,12 @@ Microsoft Agent Framework 핸즈온 워크샵 노트북입니다.
 Microsoft Foundry 검색
 ![Foundry 프로젝트 생성](screenshot/foundry_01.png)
 
+Create a Foundry Resource 클릭
+![모델 배포](screenshot/foundry_02.png)
+
 이름(고유값) 과 Region(Korea Central) 선택 후 `리뷰 + 생성` 후 다시 `생성` 클릭
 
 ![Endpoint 확인](screenshot/foundry_03.png)
-Create a Foundry Resource 클릭
-![모델 배포](screenshot/foundry_02.png)
 
 #### Step 2. GPT-4.1 모델 배포
 
@@ -35,7 +36,7 @@ Create a Foundry Resource 클릭
 왼쪽 메뉴에서 `Models + endpoints` 클릭
 ![모델 선택](screenshot/foundry_05.png)
 
-`gpt-4.1` 모델 선택 후 기본 ㅅ값으로 배포
+`gpt-4.1` 모델 선택 후 기본 값으로 배포
 
 ![모델 선택](screenshot/foundry_06.png)
 
