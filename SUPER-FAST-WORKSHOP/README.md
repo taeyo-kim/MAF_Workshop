@@ -107,9 +107,9 @@ git clone https://github.com/wedding-crasher/MAF_Workshop.git
 
 클론 완료 후 왼쪽 **파일 탐색기**에서 `MAF_Workshop` → `SUPER-FAST-WORKSHOP` 폴더로 이동합니다.
 
-> 💡 `git` 명령어가 동작하지 않으면 MAF-Orchestrations-Workshop.ipynb 파일과 MAF-Travel-Planner-Workshop.ipynb 파일을 다운 받아서 Jupyter Notebook 에 업로드 합니다.
+> 💡 `git` 명령어가 동작하지 않으면 MAF-Orchestrations-Workshop.ipynb 파일과 MAF-Travel-Planner-Workshop.ipynb 파일을 다운 받아서 Jupyter Notebook 에 넣습니다.
 
-> 파일을 Jupyter Notebook 을 실행한 폴더에 넣어도 되고 아래와 같이 다운로드 한 후 불러와도 됩니다.
+> 파일을 Jupyter Notebook 을 실행한 폴더에 직접 넣어도 되고 다운로드 후 아래와 같이 불러와도 됩니다.
 
 ![노트북 업로드](screenshot/3_jupyter.png)
 
