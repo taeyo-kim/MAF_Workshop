@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 오늘의 스페셜 메뉴를 반환하는 도구
-def get_specials() -> Annotated[str, "Returns the specials from the menu."]:
+def get_specials() -> Annotated[str, "🍽️ 메뉴에서 스페셜 항목을 반환합니다."]:
     return '''
         Special Soup: Clam Chowder
         Special Salad: Cobb Salad
@@ -19,14 +19,14 @@ def get_specials() -> Annotated[str, "Returns the specials from the menu."]:
 
 # 메뉴 아이템의 가격을 반환하는 도구
 def get_item_price(
-    menu_item: Annotated[str, "The name of the menu item."],
-) -> Annotated[str, "Returns the price of the menu item."]:
+    menu_item: Annotated[str, "💰 메뉴 항목의 이름입니다."],
+) -> Annotated[str, "메뉴 항목의 가격을 반환합니다."]:
     return "$9.99"
 
 # RestaurantAgent 에이전트 생성 및 도구 제공
 agent = AzureOpenAIChatClient(credential=AzureCliCredential()).as_agent(
     name="RestaurantAgent",
-    instructions="Answer questions about the menu.",
+    instructions="🍴 메뉴에 대한 질문에 답변합니다.",
     tools=[get_specials, get_item_price],
 )
 

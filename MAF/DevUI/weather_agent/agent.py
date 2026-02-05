@@ -15,18 +15,18 @@ from pydantic import Field
 
 # NOTE: approval_mode="never_require" is for sample brevity. Use "always_require" in production; see samples/getting_started/tools/function_tool_with_approval.py and samples/getting_started/tools/function_tool_with_approval_and_threads.py.
 def get_weather(
-    location: Annotated[str, Field(description="The location to get the weather for.")],
+    location: Annotated[str, Field(description="날씨를 가져올 위치입니다. 📍")],
 ) -> str:
-    """Get the weather for a given location."""
+    """주어진 위치의 날씨를 가져옵니다. ☀️🌦️"""
     conditions = ["sunny", "cloudy", "rainy", "stormy"]
     temperature = 22
     return f"The weather in {location} is {conditions[0]} with a high of {temperature}°C."
 
 def get_forecast(
-    location: Annotated[str, Field(description="The location to get the forecast for.")],
-    days: Annotated[int, Field(description="Number of days for forecast")] = 3,
+    location: Annotated[str, Field(description="예보를 가져올 위치입니다. 📍")],
+    days: Annotated[int, Field(description="예보 기간(일) 📅")] = 3,
 ) -> str:
-    """Get weather forecast for multiple days."""
+    """여러 날의 날씨 예보를 가져옵니다. 📊☁️"""
     conditions = ["sunny", "cloudy", "rainy", "stormy"]
     forecast: list[str] = []
 
@@ -47,9 +47,9 @@ agent = ChatAgent(
         credential=AzureCliCredential(),
     ),
     instructions="""
-    You are a weather assistant using Azure AI Foundry models. You can provide
-    current weather information and forecasts for any location. Always be helpful
-    and provide detailed weather information when asked.
+    당신은 Azure AI Foundry 모델을 사용하는 날씨 어시스턴트입니다. ☀️🌦️ 
+    모든 위치에 대한 현재 날씨 정보와 예보를 제공할 수 있습니다. 항상 도움이 되고 
+    요청을 받으면 상세한 날씨 정보를 제공하세요. 💁✨
     """,
     tools=[get_weather, get_forecast],
 )

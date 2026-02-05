@@ -15,9 +15,9 @@ endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
 deployment_name = os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
 
 if not endpoint:
-    raise ValueError("AZURE_OPENAI_ENDPOINT environment variable is required")
+    raise ValueError("⚠️ AZURE_OPENAI_ENDPOINT 환경 변수가 필요합니다")
 if not deployment_name:
-    raise ValueError("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME environment variable is required")
+    raise ValueError("⚠️ AZURE_OPENAI_CHAT_DEPLOYMENT_NAME 환경 변수가 필요합니다")
 
 chat_client = AzureOpenAIChatClient(
     credential=AzureCliCredential(),
@@ -28,21 +28,21 @@ chat_client = AzureOpenAIChatClient(
 # Create the AI agent
 agent = ChatAgent(
     name="AGUIAssistant",
-    instructions="You are a helpful assistant.",
+    instructions="🤖 당신은 도움이 되는 어시스턴트입니다.",
     chat_client=chat_client,
 )
 
 # 날씨 정보를 제공하는 도구 함수 정의
 def get_weather(
-    location: Annotated[str, Field(description="The location to get the weather for.")],
+    location: Annotated[str, Field(description="☀️ 날씨를 조회할 위치입니다.")],
 ) -> str:
-    """Get the weather for a given location."""
-    return f"The weather in {location} is cloudy with a high of 15°C."
+    """특정 위치의 날씨 정보를 조회합니다."""
+    return f"☁️ {location}의 날씨는 흐림이며 최고 기온은 15°C입니다."
 
 # 날씨 정보를 제공하는 Agent 생성
 weather_agent = ChatAgent(
     name="AGUIAssistant",
-    instructions="You are a helpful assistant.",
+    instructions="🤖 당신은 도움이 되는 어시스턴트입니다.",
     chat_client=chat_client,
     tools=[get_weather]
 )

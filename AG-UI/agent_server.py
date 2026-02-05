@@ -13,9 +13,9 @@ endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
 deployment_name = os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
 
 if not endpoint:
-    raise ValueError("AZURE_OPENAI_ENDPOINT environment variable is required")
+    raise ValueError("⚠️ AZURE_OPENAI_ENDPOINT 환경 변수가 필요합니다")
 if not deployment_name:
-    raise ValueError("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME environment variable is required")
+    raise ValueError("⚠️ AZURE_OPENAI_CHAT_DEPLOYMENT_NAME 환경 변수가 필요합니다")
 
 chat_client = AzureOpenAIChatClient(
     credential=AzureCliCredential(),
@@ -26,7 +26,7 @@ chat_client = AzureOpenAIChatClient(
 # Create the AI agent
 agent = ChatAgent(
     name="AGUIAssistant",
-    instructions="You are a helpful assistant.",
+    instructions="🤖 당신은 도움이 되는 어시스턴트입니다.",
     chat_client=chat_client,
 )
 

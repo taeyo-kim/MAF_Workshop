@@ -24,7 +24,7 @@ from azure.identity import DefaultAzureCredential
 
 # Define structured output for review results
 class ReviewResult(BaseModel):
-    """Review evaluation with scores and feedback."""
+    """점수와 피드백을 포함한 리뷰 평가 결과입니다. 📊👀"""
 
     score: int  # Overall quality score (0-100)
     feedback: str  # Concise, actionable feedback
@@ -36,7 +36,7 @@ class ReviewResult(BaseModel):
 
 # Condition function: route to editor if score < 80
 def needs_editing(message: Any) -> bool:
-    """Check if content needs editing based on review score."""
+    """리뷰 점수에 따라 콘텐츠가 편집이 필요한지 확인합니다. ✍️🚨"""
     if not isinstance(message, AgentExecutorResponse):
         return False
     try:
@@ -48,7 +48,7 @@ def needs_editing(message: Any) -> bool:
 
 # Condition function: content is approved (score >= 80)
 def is_approved(message: Any) -> bool:
-    """Check if content is approved (high quality)."""
+    """콘텐츠가 승인되었는지(고품질) 확인합니다. ✅✨"""
     if not isinstance(message, AgentExecutorResponse):
         return True
     try:
@@ -65,9 +65,9 @@ chat_client = AzureOpenAIChatClient(credential=DefaultAzureCredential())
 writer = chat_client.as_agent(
     name="Writer",
     instructions=(
-        "You are an excellent content writer. "
-        "Create clear, engaging content based on the user's request. "
-        "Focus on clarity, accuracy, and proper structure."
+        "당신은 훌륭한 콘텐츠 작성자입니다. ✍️✨ "
+        "사용자의 요청에 따라 명확하고 매력적인 콘텐츠를 만드세요. "
+        "명확성, 정확성, 적절한 구조에 중점을 두세요."
     ),
 )
 
@@ -75,16 +75,16 @@ writer = chat_client.as_agent(
 reviewer = chat_client.as_agent(
     name="Reviewer",
     instructions=(
-        "You are an expert content reviewer. "
-        "Evaluate the writer's content based on:\n"
-        "1. Clarity - Is it easy to understand?\n"
-        "2. Completeness - Does it fully address the topic?\n"
-        "3. Accuracy - Is the information correct?\n"
-        "4. Structure - Is it well-organized?\n\n"
-        "Return a JSON object with:\n"
-        "- score: overall quality (0-100)\n"
-        "- feedback: concise, actionable feedback\n"
-        "- clarity, completeness, accuracy, structure: individual scores (0-100)"
+        "당신은 전문 콘텐츠 리뷰어입니다. 👀📊 "
+        "작성자의 콘텐츠를 다음 기준으로 평가하세요:\n"
+        "1. 명확성 - 이해하기 쉬운가요?\n"
+        "2. 완성도 - 주제를 완전히 다루고 있나요?\n"
+        "3. 정확성 - 정보가 정확한가요?\n"
+        "4. 구조 - 잘 정리되어 있나요?\n\n"
+        "다음을 포함하는 JSON 객체를 반환하세요:\n"
+        "- score: 전체 품질 (0-100)\n"
+        "- feedback: 간결하고 실행 가능한 피드백\n"
+        "- clarity, completeness, accuracy, structure: 각 항목별 점수 (0-100)"
     ),
     default_options={"response_format": ReviewResult},
 )
@@ -93,10 +93,10 @@ reviewer = chat_client.as_agent(
 editor = chat_client.as_agent(
     name="Editor",
     instructions=(
-        "You are a skilled editor. "
-        "You will receive content along with review feedback. "
-        "Improve the content by addressing all the issues mentioned in the feedback. "
-        "Maintain the original intent while enhancing clarity, completeness, accuracy, and structure."
+        "당신은 숙련된 편집자입니다. ✍️🔧 "
+        "리뷰 피드백과 함께 콘텐츠를 받게 됩니다. "
+        "피드백에서 언급된 모든 문제를 해결하여 콘텐츠를 개선하세요. "
+        "명확성, 완성도, 정확성, 구조를 향상시키면서 원래의 의도를 유지하세요."
     ),
 )
 
@@ -104,9 +104,9 @@ editor = chat_client.as_agent(
 publisher = chat_client.as_agent(
     name="Publisher",
     instructions=(
-        "You are a publishing agent. "
-        "You receive either approved content or edited content. "
-        "Format it for publication with proper headings and structure."
+        "당신은 발행 에이전트입니다. 📝✨ "
+        "승인된 콘텐츠 또는 편집된 콘텐츠를 받습니다. "
+        "적절한 제목과 구조로 발행용으로 포맷팅하세요."
     ),
 )
 
@@ -114,12 +114,12 @@ publisher = chat_client.as_agent(
 summarizer = chat_client.as_agent(
     name="Summarizer",
     instructions=(
-        "You are a summarizer agent. "
-        "Create a final publication report that includes:\n"
-        "1. A brief summary of the published content\n"
-        "2. The workflow path taken (direct approval or edited)\n"
-        "3. Key highlights and takeaways\n"
-        "Keep it concise and professional."
+        "당신은 요약 에이전트입니다. 📊📝 "
+        "다음을 포함하는 최종 발행 보고서를 작성하세요:\n"
+        "1. 발행된 콘텐츠의 간략한 요약\n"
+        "2. 사용된 워크플로우 경로(직접 승인 또는 편집)\n"
+        "3. 주요 하이라이트와 시사점\n"
+        "간결하고 전문적으로 작성하세요."
     ),
 )
 

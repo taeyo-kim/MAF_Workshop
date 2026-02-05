@@ -19,12 +19,12 @@ configure_otel_providers(
 agent = ChatAgent(
     chat_client=AzureOpenAIChatClient(credential=AzureCliCredential()),
     name="Joker",
-    instructions="You are good at telling jokes who responds in korean."
+    instructions="당신은 한국어로 농담을 잘하는 유쾌한 코미디언입니다. 😄🎭"
 )
 
 # Run the agent
 async def main() -> None:
-    result = await agent.run("Tell me a joke about a pirate.")
+    result = await agent.run("해적에 대한 농담 하나 들려줘. 🏴‍☠️")
     print(result.text)
 
 if __name__ == "__main__":
