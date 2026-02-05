@@ -74,7 +74,7 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 > **빠른 시작 가이드**  By [wedding-crasher](https://github.com/wedding-crasher)
 
-📚 [**MAF-Travel-Planner-Workshop**](MAF-Travel-Planner-Workshop.ipynb) - 1시간 만에 여행 계획 에이전트 만들기
+📚 [**MAF-Travel-Planner-Workshop**](SUPER-FAST-WORKSHOP/MAF-Travel-Planner-Workshop.ipynb) - 1시간 만에 여행 계획 에이전트 만들기
 
 ---
 
