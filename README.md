@@ -6,7 +6,7 @@
 
 *Last Updated: 2026.02.05*
 
-[![Framework](https://img.shields.io/badge/Framework-MAF_V2-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
+[![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
@@ -25,7 +25,7 @@
 MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르게 동작하지 않는 경우가 있습니다. 이 워크샵은 이러한 문제를 해결하고 실무에서 바로 적용 가능한 실습 환경을 제공합니다.
 
 > **⚠️ 중요 알림**  
-> 정식 출시 예정 시기: **2026년 2월 말 ~ 3월 초** (일정 변경 가능)  
+> 정식버전 출시 예정 : **2026년 2월 말 ~ 3월 초 추정** (일정 변경 가능)  
 > 정식 출시 후에는 [공식 문서](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)를 기준으로 실습을 진행하시길 권장합니다. 물론, 이 워크샵도 계속해서 유용한 참고 자료가 될 것입니다! (제가 업데이트를 한다면 말이죠 😉)
 
 ---
@@ -106,3 +106,10 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 - 🧿 [**AG-UI/01.Build-server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
 - 🧿 [**AG-UI/02.Build-client**](AG-UI/02.Build-client.ipynb) - AG-UI를 활용한 에이전트 클라이언트 만들기
+
+---
+
+## 📂 AI-SEARCH + MAF 실습
+
+- 🔍 [**AI-SEARCH/Agent-Search**](AI-SEARCH/Agent-Search.ipynb) - MAF Agent와 Azure AI Search 연동 예제
+    : 이 실습은 [Azure AI Search with Document Intelligence](https://github.com/hijigoo/azure-ai-search-with-doc-intelligence) 워크샵을 기반으로 하여 Azure AI Search를 구성하고, 그 이후 MAF Agent의 통합하는 샘플 코드를 제공합니다.
