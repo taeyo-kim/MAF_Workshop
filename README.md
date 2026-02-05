@@ -41,7 +41,7 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 #### 🏁 시작하기
 
 - 🌟 [**Overview**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
-- ⚙️ [**0.Prerequisite**](MAF/0.Prerequisite.ipynb) - 사전 준비 사항 및 환경 설정
+- ⚙️ [**0.Prerequisite**](MAF/0.Prerequisite.ipynb) - 사전 준비 및 환경 설정 
 - 🤖 [**1.Create-Agent**](MAF/1.CreateAgent.ipynb) - 에이전트 생성 기본
 
 </td>
