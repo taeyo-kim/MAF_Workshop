@@ -34,30 +34,17 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 ### 📘 기초 과정
 
-<table>
-<tr>
-<td width="50%">
-
 #### 🏁 시작하기
 
 - 🌟 [**Overview**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
 - ⚙️ [**0.Prerequisite**](MAF/0.Prerequisite.ipynb) - 사전 준비 및 환경 설정 
 - 🤖 [**1.Create-Agent**](MAF/1.CreateAgent.ipynb) - 에이전트 생성 기본
 
-</td>
-<td width="50%">
-
 #### 🔧 핵심 기능
 
 - 💬 [**2.Multi-turn**](MAF/2.Multi-turn-Conversation.ipynb) - 다중턴 대화 구현
 - 🛠️ [**3.Function-Tool**](MAF/3.Function-Tool.ipynb) - Function 도구 사용법
 - 👤 [**4.Human-In-Loop**](MAF/4.Human-In-Loop.ipynb) - 휴먼 개입 패턴 구현
-
-</td>
-</tr>
-</table>
-
----
 
 ### 📗 중급 과정
 
