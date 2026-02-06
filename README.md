@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.05*
+*Last Updated: 2026.02.06*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
@@ -113,3 +113,10 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 - 🔍 [**AI-SEARCH/Agent-Search**](AI-SEARCH/Agent-Search.ipynb) - MAF Agent와 Azure AI Search 연동 예제
     : 이 실습은 [Azure AI Search with Document Intelligence](https://github.com/hijigoo/azure-ai-search-with-doc-intelligence) 워크샵을 기반으로 하여 Azure AI Search를 구성하고, 그 이후 MAF Agent의 통합하는 샘플 코드를 제공합니다.
+
+    ---
+
+## 🧿 기타 정보
+
+- FAQ  : https://learn.microsoft.com/en-us/azure/ai-foundry/agents/faq?view=foundry  
+- Quotas, limits, models, and regional support : https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/limits-quotas-regions?view=foundry
