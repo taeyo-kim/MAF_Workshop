@@ -68,17 +68,6 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 ---
 
-## ⚡ 특별 워크샵
-
-### ✈️ 1시간 핵심 워크샵: 여행 계획 에이전트
-
-> **빠른 시작 가이드**  By [wedding-crasher](https://github.com/wedding-crasher)
-
-📚 [**Travel-Planner-Workshop**](https://github.com/wedding-crasher/MAF_Workshop/tree/main/SUPER-FAST-WORKSHOP) - 1시간 만에 여행 계획 에이전트 만들기  
-    - 이 워크샵은 wedding-crasher님의 Repo에서 계속해서 업데이트가 되고 있습니다. 그렇기에, 링크를 해당 Repo로 변경했습니다.
-
----
-
 ## ☁️ Microsoft Foundry 통합
 
 ### 🌟 Azure AI Foundry 연동 (**중요 🔔**)
@@ -95,6 +84,17 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 - 🔀 [**21.SimpleSequentialWorkflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
 - 🎭 [**22.Agents-In-Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
+
+---
+
+## ⚡ 특별 워크샵
+
+### ✈️ 1시간 핵심 워크샵: 여행 계획 에이전트
+
+> **빠른 시작 가이드**  By [wedding-crasher](https://github.com/wedding-crasher)
+
+📚 [**Travel-Planner-Workshop**](https://github.com/wedding-crasher/MAF_Workshop/tree/main/SUPER-FAST-WORKSHOP) - 1시간 만에 여행 계획 에이전트 만들기  
+    - 이 워크샵은 wedding-crasher님의 Repo에서 계속해서 업데이트가 되고 있습니다. 그렇기에, 링크를 해당 Repo로 변경했습니다.
 
 ---
 
