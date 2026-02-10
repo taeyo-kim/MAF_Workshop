@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.06*
+*Last Updated: 2026.02.10*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
@@ -84,7 +84,8 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 ### 🌟 Azure AI Foundry 연동 (**중요 🔔**)
 
 - 📢 [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
-- 📢 [**Using-Published-Agent**](MAF/Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기
+- 📢 [**Using-Published-Agent**](MAF/Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기 (⚠️**PREVIEW**)
+- 🚀 [**Deploy-HostedAgent**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기
 
 ---
 
@@ -115,7 +116,7 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 - 🔍 [**AI-SEARCH/Agent-Search**](AI-SEARCH/Agent-Search.ipynb) - MAF Agent와 Azure AI Search 연동 예제
     : 이 실습은 [Azure AI Search with Document Intelligence](https://github.com/hijigoo/azure-ai-search-with-doc-intelligence) 워크샵을 기반으로 하여 Azure AI Search를 구성하고, 그 이후 MAF Agent의 통합하는 샘플 코드를 제공합니다.
 
-    ---
+---
 
 ## 🧿 기타 정보
 
