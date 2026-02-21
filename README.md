@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.10*
+*Last Updated: 2026.02.21*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
@@ -107,6 +107,7 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 ### 🧸 AG-UI를 활용한 서버/클라이언트 구축
 
 - 🧿 [**AG-UI/01.Build-server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
+- 🧿 [**AG-UI/03.CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
 - 🧿 [**AG-UI/02.Build-client**](AG-UI/02.Build-client.ipynb) - AG-UI를 활용한 에이전트 클라이언트 만들기
 
 ---

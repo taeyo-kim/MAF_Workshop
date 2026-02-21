@@ -1,0 +1,222 @@
+@import "tailwindcss";
+
+:root {
+  /* Color tokens */
+  --background: #f0f6ff;
+  --surface: #ffffff;
+  --foreground: #0f1d35;
+  --foreground-muted: #4b6080;
+  --border: #c8daf5;
+  --accent: #2563eb;
+  --accent-light: #dbeafe;
+  --accent-hover: #1d4ed8;
+
+  /* Spacing */
+  --radius: 14px;
+  --radius-sm: 8px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.10), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #070e1c;
+    --surface: #0d1e38;
+    --foreground: #dce8fb;
+    --foreground-muted: #6b8cba;
+    --border: #1a3358;
+    --accent: #60a5fa;
+    --accent-light: #0d2045;
+    --accent-hover: #93c5fd;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+main {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 2rem 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  color: var(--foreground-muted);
+  max-width: 65ch;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Card component */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground-muted);
+}
+
+/* =============================================
+   CopilotKit Blue Theme Overrides
+   ============================================= */
+
+:root {
+  /* Primary = 유저 메시지 버블 배경, 버튼, 헤더 텍스트 */
+  --copilot-kit-primary-color: #2563eb;
+  /* Contrast = primary 위의 텍스트 (유저 메시지 글자) */
+  --copilot-kit-contrast-color: #ffffff;
+  /* Background = 채팅창 전체 배경 */
+  --copilot-kit-background-color: #eff6ff;
+  /* Input 배경 */
+  --copilot-kit-input-background-color: #ffffff;
+  /* Secondary = 헤더 배경 */
+  --copilot-kit-secondary-color: #1d4ed8;
+  /* Secondary contrast = 어시스턴트 메시지 텍스트 */
+  --copilot-kit-secondary-contrast-color: #0f1d35;
+  /* 구분선 */
+  --copilot-kit-separator-color: #bfdbfe;
+  /* muted (버튼 아이콘 등) */
+  --copilot-kit-muted-color: #93c5fd;
+}
+
+/* 헤더: blue 그라디언트 배경 + 흰 글자 */
+.copilotKitHeader {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%) !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #1d4ed8 !important;
+}
+
+/* 헤더 버튼 아이콘 */
+.copilotKitHeader > button {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.copilotKitHeader > button:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 어시스턴트 메시지: 연한 파란 배경 */
+.copilotKitMessage.copilotKitAssistantMessage {
+  background: #dbeafe !important;
+  color: #0f1d35 !important;
+  border-radius: 0 14px 14px 14px !important;
+  padding: 0.25rem 0.5rem !important;  padding-bottom: 2rem !important;
+}
+
+/* Thumbs up/down 아이콘을 메시지 박스 아래로 이동 */
+.copilotKitMessage.copilotKitAssistantMessage .copilotKitMessageControls {
+  top: auto !important;
+  bottom: 0.25rem !important;
+  left: 0.5rem !important;
+}
+
+/* 입력창 포커스 스타일 */
+.copilotKitInput {
+  border-color: #bfdbfe !important;
+}
+.copilotKitInput:focus-within {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
