@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.21*
+*Last Updated: 2026.02.24*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
@@ -82,6 +82,7 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 ### 연결 및 조율
 
+- 🔗 [**20.Workflow_Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
 - 🔀 [**21.SimpleSequentialWorkflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
 - 🎭 [**22.Agents-In-Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
 
