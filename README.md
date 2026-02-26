@@ -7,7 +7,7 @@
 *Last Updated: 2026.02.24*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
-[![Status](https://img.shields.io/badge/Status-Preview-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-RC-yellow?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
 </div>
@@ -22,7 +22,7 @@
 
 ### 💡 왜 이 워크샵이 필요한가요?
 
-MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르게 동작하지 않는 경우가 있습니다. 이 워크샵은 이러한 문제를 해결하고 실무에서 바로 적용 가능한 실습 환경을 제공합니다.
+MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 동작하지 않는 경우가 있습니다. 이 워크샵은 이러한 문제를 해결하고 실무에서 바로 적용 가능한 실습 환경을 제공합니다.
 
 > **⚠️ 중요 알림**  
 > 정식버전 출시 예정 : **2026년 2월 말 ~ 3월 초 추정** (일정 변경 가능)  
@@ -32,35 +32,28 @@ MAF는 현재 **Preview 단계**로, 공식 문서의 일부 코드가 올바르
 
 ## 🎯 학습 경로
 
-### 📘 기초 과정
+### 필수 사전 준비사항
 
-#### 🏁 시작하기
+- ⚙️ [**Prerequisite**](MAF/0.Prerequisite.ipynb) - 사전 준비 및 환경 설정
 
-- 🌟 [**Overview**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
-- ⚙️ [**0.Prerequisite**](MAF/0.Prerequisite.ipynb) - 사전 준비 및 환경 설정 
-- 🤖 [**1.Create-Agent**](MAF/1.CreateAgent.ipynb) - 에이전트 생성 기본
+### 📘 기본 이해
 
-#### 🔧 핵심 기능
+- 🌟 1. [**Overview**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
+- 📱 2. [**Agent-Type**](MAF/Agent-Type.ipynb) - 에이전트 유형 및 기능 비교
 
-- 💬 [**2.Multi-turn**](MAF/2.Multi-turn-Conversation.ipynb) - 다중턴 대화 구현
-- 🛠️ [**3.Function-Tool**](MAF/3.Function-Tool.ipynb) - Function 도구 사용법
-- 👤 [**4.Human-In-Loop**](MAF/4.Human-In-Loop.ipynb) - 휴먼 개입 패턴 구현
+### 📗 실습
 
-### 📗 중급 과정
+- 🤖 3. [**Create-Agent**](MAF/1.CreateAgent.ipynb) - 에이전트 생성 기본
+- 💬 4. [**Multi-turn**](MAF/2.Multi-turn-Conversation.ipynb) - 다중턴 대화 구현
+- 🛠️ 5. [**Function-Tool**](MAF/3.Function-Tool.ipynb) - Function 도구 사용법
+- 👤 6. [**Human-In-Loop**](MAF/4.Human-In-Loop.ipynb) - 휴먼 개입 패턴 구현
+- 📊 7. [**Structured-Output**](MAF/5.Structured-Output.ipynb) - 구조화된 출력 생성
+- 🔌 8. [**Agent-as-Function**](MAF/6.Agent-as-function-tool.ipynb) - 에이전트를 Function 도구로 활용
+- 🔌 9. [**Agent-with-Middleware**](MAF/9.Agent-with-Middleware.ipynb) - 미들웨어 추가 및 활용
+- 📈 10. [**Observability**](MAF/8.Observability.ipynb) - 에이전트 관찰성(Observability) 구현
 
-#### 🎨 출력 및 통합
 
-- 📊 [**5.Structured-Output**](MAF/5.Structured-Output.ipynb) - 구조화된 출력 생성 🚧 *작업 중*
-- 🔌 [**6.Agent-as-Function**](MAF/6.Agent-as-function-tool.ipynb) - 에이전트를 Function 도구로 활용
-- 🔗 [**7.Agent-as-MCP**](MAF/7.Agent-as-MCP-tool.ipynb) - 에이전트를 MCP 도구로 활용
-- 📱 [**Agent-Type**](MAF/Agent-Type.ipynb) - 에이전트 유형 및 기능 비교
-
-#### 👁️ 모니터링 & 확장
-
-- 📈 [**8.Observability**](MAF/8.Observability.ipynb) - 에이전트 관찰성(Observability) 구현
-- 🔌 [**9.Agent-with-Middleware**](MAF/9.Agent-with-Middleware.ipynb) - 미들웨어 추가 및 활용
-
-#### 💾 상태 관리
+#### 💾 상태 관리 (공사중)
 
 - 💿 [**10.Persist-and-Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
 - 🗄️ [**11.ExternalStorage-Redis**](MAF/11.ExternalStroage-Redis.ipynb) - Redis를 활용한 외부 스토리지 연동
