@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.24*
+*Last Updated: 2026.02.26*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-RC-yellow?style=for-the-badge)]()
@@ -18,6 +18,13 @@
 
 > **Microsoft Agent Framework (MAF) 실습 워크샵에 오신 것을 환영합니다!**
 
+### **업데이트**  
+📢 하기 실습 중 12번까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
+📢 추후로도 정상 동작을 확인한 실습은 번호를 붙여서 식별할 수 있게 할 예정이니 참고 바랍니다.
+
+---
+
+
 이 워크샵은 [Microsoft Learn의 공식 MAF 문서](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)를 기반으로 재구성되었습니다.
 
 ### 💡 왜 이 워크샵이 필요한가요?
@@ -30,7 +37,7 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 ---
 
-## 🎯 학습 경로
+## 🎯 MAF 학습 경로
 
 ### 필수 사전 준비사항
 
@@ -51,29 +58,18 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 - 🔌 8. [**Agent-as-Function**](MAF/6.Agent-as-function-tool.ipynb) - 에이전트를 Function 도구로 활용
 - 🔌 9. [**Agent-with-Middleware**](MAF/9.Agent-with-Middleware.ipynb) - 미들웨어 추가 및 활용
 - 📈 10. [**Observability**](MAF/8.Observability.ipynb) - 에이전트 관찰성(Observability) 구현
-
-
-#### 💾 상태 관리 (공사중)
-
-- 💿 [**10.Persist-and-Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
-- 🗄️ [**11.ExternalStorage-Redis**](MAF/11.ExternalStroage-Redis.ipynb) - Redis를 활용한 외부 스토리지 연동
-- 🧠 [**12.Memory_Agent**](MAF/12.Memory_Agent.ipynb) - 메모리 기능을 가진 에이전트 구현
-
+- 💿 11. [**Persist-and-Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
 ---
 
-## ☁️ Microsoft Foundry 통합
+**☁️ Microsoft Foundry Agent 통합**
 
-### 🌟 Azure AI Foundry 연동 (**중요 🔔**)
-
-- 📢 [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
+- 📢 12. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
 - 📢 [**Using-Published-Agent**](MAF/Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기 (⚠️**PREVIEW**)
 - 🚀 [**Deploy-HostedAgent**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기
 
 ---
 
-## 🔄 워크플로우 실습
-
-### 연결 및 조율
+**🔄 워크플로우 실습**
 
 - 🔗 [**20.Workflow_Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
 - 🔀 [**21.SimpleSequentialWorkflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
@@ -81,24 +77,13 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 ---
 
-## ⚡ 특별 워크샵
+**🖥️ 개발 도구 연계 (필수)**
 
-### ✈️ 1시간 핵심 워크샵: 여행 계획 에이전트
-
-> **빠른 시작 가이드**  By [wedding-crasher](https://github.com/wedding-crasher)
-
-📚 [**Travel-Planner-Workshop**](https://github.com/wedding-crasher/MAF_Workshop/tree/main/SUPER-FAST-WORKSHOP) - 1시간 만에 여행 계획 에이전트 만들기  
-    - 이 워크샵은 wedding-crasher님의 Repo에서 계속해서 업데이트가 되고 있습니다. 그렇기에, 링크를 해당 Repo로 변경했습니다.
-
----
-
-## 🖥️ 개발 도구
-
-### 🎨 DevUI 사용
+🎨 DevUI 사용
 
 - 🔮 [**DevUI/intro**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
 
-### 🧸 AG-UI를 활용한 서버/클라이언트 구축
+🧸 AG-UI를 활용한 서버/클라이언트 구축
 
 - 🧿 [**AG-UI/01.Build-server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
 - 🧿 [**AG-UI/03.CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
