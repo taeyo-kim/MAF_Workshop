@@ -22,6 +22,9 @@ from agent_framework.azure import AzureOpenAIChatClient
 from pydantic import BaseModel
 from azure.identity import DefaultAzureCredential
 
+from dotenv import load_dotenv
+load_dotenv()  # .env 파일 로드
+
 # Define structured output for review results
 class ReviewResult(BaseModel):
     """점수와 피드백을 포함한 리뷰 평가 결과입니다. 📊👀"""
@@ -129,13 +132,13 @@ summarizer = chat_client.as_agent(
 #   - If score < 80: → Editor → Publisher → Summarizer (improvement path)
 # Both paths converge at Summarizer for final report
 builder = WorkflowBuilder(
+    start_executor=writer,
     name="Content Review Workflow",
     description="Multi-agent content creation workflow with quality-based routing (Writer → Reviewer → Editor/Publisher)",
 )
 
 workflow = (
     builder
-    .set_start_executor(writer)
     .add_edge(writer, reviewer)
     # Branch 1: High quality (>= 80) goes directly to publisher
     .add_edge(reviewer, publisher, condition=is_approved)

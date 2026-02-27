@@ -4,7 +4,7 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.26*
+*Last Updated: 2026.02.27*
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-RC-yellow?style=for-the-badge)]()
@@ -19,7 +19,7 @@
 > **Microsoft Agent Framework (MAF) 실습 워크샵에 오신 것을 환영합니다!**
 
 ### **업데이트**  
-📢 하기 실습 중 12번까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
+📢 하기 실습 중 **18번** 까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
 📢 추후로도 정상 동작을 확인한 실습은 번호를 붙여서 식별할 수 있게 할 예정이니 참고 바랍니다.
 
 ---
@@ -46,7 +46,9 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 ### 📘 기본 이해
 
 - 🌟 1. [**Overview**](MAF/Overview.ipynb) - MAF 개요 및 아키텍처
-- 📱 2. [**Agent-Type**](MAF/Agent-Type.ipynb) - 에이전트 유형 및 기능 비교
+- 📱 2. [**Agent-Type**](MAF/Agent-Type.ipynb) - 에이전트 유형 및 기능 비교  
+
+    (옵션) [**MAF-Packages**](MAF/MAF-packages.ipynb) - MAF 패키지 구조 및 역할 설명
 
 ### 📗 실습
 
@@ -64,16 +66,16 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 **☁️ Microsoft Foundry Agent 통합**
 
 - 📢 12. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
-- 📢 [**Using-Published-Agent**](MAF/Using-Published-Agent.ipynb) - 배포 및 게시된 Foundry Agent 활용하기 (⚠️**PREVIEW**)
-- 🚀 [**Deploy-HostedAgent**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기
+- 📱 13. [**Using-Published-Agent**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
+- 🚀 14. [**Deploy-HostedAgent**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
 
 ---
 
 **🔄 워크플로우 실습**
 
-- 🔗 [**20.Workflow_Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
-- 🔀 [**21.SimpleSequentialWorkflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
-- 🎭 [**22.Agents-In-Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
+- 🔗 15. [**20.Workflow_Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
+- 🔀 16. [**21.SimpleSequentialWorkflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
+- 🎭 17. [**22.Agents-In-Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
 
 ---
 
@@ -81,7 +83,7 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 🎨 DevUI 사용
 
-- 🔮 [**DevUI/intro**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
+- 🔮 18. [**DevUI/intro**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
 
 🧸 AG-UI를 활용한 서버/클라이언트 구축
 

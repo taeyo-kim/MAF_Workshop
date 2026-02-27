@@ -6,12 +6,16 @@ Make sure to run 'az login' before starting devui.
 """
 
 import os
+from pathlib import Path
 from typing import Annotated
 
-from agent_framework import ChatAgent
-from agent_framework.azure import AzureAIAgentClient
+from agent_framework import Agent
+from agent_framework.azure import AzureOpenAIChatClient
 from azure.identity import AzureCliCredential
 from pydantic import Field
+
+from dotenv import load_dotenv
+load_dotenv()  # .env 파일 로드
 
 # NOTE: approval_mode="never_require" is for sample brevity. Use "always_require" in production; see samples/getting_started/tools/function_tool_with_approval.py and samples/getting_started/tools/function_tool_with_approval_and_threads.py.
 def get_weather(
@@ -39,12 +43,10 @@ def get_forecast(
 
 
 # Agent instance following Agent Framework conventions
-agent = ChatAgent(
+agent = Agent(
     name="FoundryWeatherAgent",
-    chat_client=AzureAIAgentClient(
-        project_endpoint=os.environ.get("AZURE_AI_PROJECT_ENDPOINT"),
-        model_deployment_name=os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"),
-        credential=AzureCliCredential(),
+    client=AzureOpenAIChatClient(
+        credential=AzureCliCredential(),        
     ),
     instructions="""
     당신은 Azure AI Foundry 모델을 사용하는 날씨 어시스턴트입니다. ☀️🌦️ 
