@@ -4,11 +4,14 @@ import os
 from typing_extensions import Annotated
 from pydantic import Field
 import uvicorn
-from agent_framework import ChatAgent
+from agent_framework import Agent
 from agent_framework.azure import AzureOpenAIChatClient
 from agent_framework_ag_ui import add_agent_framework_fastapi_endpoint
 from azure.identity import AzureCliCredential
 from fastapi import FastAPI
+
+from dotenv import load_dotenv
+load_dotenv()  # .env 파일 로드
 
 # Read required configuration
 endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
@@ -26,10 +29,10 @@ chat_client = AzureOpenAIChatClient(
 )
 
 # Create the AI agent
-agent = ChatAgent(
+agent = Agent(
     name="AGUIAssistant",
     instructions="🤖 당신은 도움이 되는 어시스턴트입니다.",
-    chat_client=chat_client,
+    client=chat_client,
 )
 
 # 날씨 정보를 제공하는 도구 함수 정의
@@ -40,10 +43,10 @@ def get_weather(
     return f"☁️ {location}의 날씨는 흐림이며 최고 기온은 15°C입니다."
 
 # 날씨 정보를 제공하는 Agent 생성
-weather_agent = ChatAgent(
+weather_agent = Agent(
     name="AGUIAssistant",
     instructions="🤖 당신은 도움이 되는 어시스턴트입니다.",
-    chat_client=chat_client,
+    client=chat_client,
     tools=[get_weather]
 )
 
