@@ -2,8 +2,8 @@
 from typing import Annotated
 from agent_framework.azure import AzureOpenAIChatClient
 from azure.identity import AzureCliCredential
-from mcp.server.stdio import stdio_server
-import anyio
+from mcp.server.websocket import websocket_server
+import uvicorn
 from dotenv import load_dotenv
 
 # .env 파일 로드
@@ -33,9 +33,11 @@ agent = AzureOpenAIChatClient(credential=AzureCliCredential()).as_agent(
 # 에이전트를 MCP 서버로 전환
 server = agent.as_mcp_server()
 
-async def run():
-    async with stdio_server() as (read_stream, write_stream):
-        await server.run(read_stream, write_stream, server.create_initialization_options())
+async def mcp_asgi(scope, receive, send):
+    if scope["type"] == "websocket":
+        async with websocket_server(scope, receive, send) as (read_stream, write_stream):
+            await server.run(read_stream, write_stream, server.create_initialization_options())
 
 if __name__ == "__main__":
-    anyio.run(run)
+    print("🍴 Restaurant MCP 서버 시작: ws://localhost:8765")
+    uvicorn.run(mcp_asgi, host="127.0.0.1", port=8765)
