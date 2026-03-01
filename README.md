@@ -61,7 +61,7 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 - 💿 12. [**Persist and Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
 ---
 
-**☁️ Microsoft Foundry Agent 통합**
+### ☁️ Microsoft Foundry Agent 통합
 
 - 📢 13. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
 - 📱 14. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
@@ -70,7 +70,7 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 ---
 
-**🔄 워크플로우 실습**
+### 🔄 워크플로우 실습
 
 - 🔗 17. [**Workflow Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
 - 🔀 18. [**Simple Sequential Workflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
@@ -78,13 +78,13 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 ---
 
-**🖥️ 개발 도구 연계 (필수)**
+### 🖥️ 개발 도구 연계 (필수)
 
-🎨 DevUI 사용
+🎨 **DevUI 사용**
 
 - 🔮 20. [**DevUI**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
 
-🧸 AG-UI를 활용한 서버/클라이언트 구축
+🧸 **AG-UI를 활용한 서버/클라이언트 구축**
 
 - 🧿 21. [**AG-UI: Build Server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
 - 🧿 22. [**AG-UI: CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
@@ -92,14 +92,14 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 ---
 
-## 📂 AI-SEARCH + MAF 실습
+### 📂 AI-SEARCH + MAF 실습
 
 - 🔍 [**AI-SEARCH/Agent-Search**](AI-SEARCH/Agent-Search.ipynb) - MAF Agent와 Azure AI Search 연동 예제
     : 이 실습은 [Azure AI Search with Document Intelligence](https://github.com/hijigoo/azure-ai-search-with-doc-intelligence) 워크샵을 기반으로 하여 Azure AI Search를 구성하고, 그 이후 MAF Agent의 통합하는 샘플 코드를 제공합니다.
 
 ---
 
-## 🧿 기타 정보
+### 🧿 기타 정보
 
 - FAQ  : https://learn.microsoft.com/en-us/azure/ai-foundry/agents/faq?view=foundry  
 - Quotas, limits, models, and regional support : https://learn.microsoft.com/en-us/azure/ai-foundry/agents/concepts/limits-quotas-regions?view=foundry
