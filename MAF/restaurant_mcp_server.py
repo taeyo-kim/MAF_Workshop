@@ -26,7 +26,7 @@ def get_item_price(
 # RestaurantAgent 에이전트 생성 및 도구 제공
 agent = AzureOpenAIChatClient(credential=AzureCliCredential()).as_agent(
     name="RestaurantAgent",
-    instructions="🍴 메뉴에 대한 질문에 답변합니다.",
+    instructions="🍴당신은 메뉴에 대한 질문에 답변하는 레스토랑 에이전트입니다.",
     tools=[get_specials, get_item_price],
 )
 

@@ -4,8 +4,6 @@
 
 ### Microsoft Agent Framework  실습 가이드
 
-*Last Updated: 2026.02.27*
-
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
 [![Status](https://img.shields.io/badge/Status-RC-yellow?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
@@ -13,17 +11,17 @@
 </div>
 
 ---
+### **업데이트 정보**  
+
+**<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.02.28</span>**
+
+📢 하기 실습 중 **21번** 까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
+
+---
 
 ## 📖 개요
 
 > **Microsoft Agent Framework (MAF) 실습 워크샵에 오신 것을 환영합니다!**
-
-### **업데이트**  
-📢 하기 실습 중 **20번** 까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
-📢 추후로도 정상 동작을 확인한 실습은 번호를 붙여서 식별할 수 있게 할 예정이니 참고 바랍니다.
-
----
-
 
 이 워크샵은 [Microsoft Learn의 공식 MAF 문서](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)를 기반으로 재구성되었습니다.
 
@@ -56,25 +54,26 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 - 🛠️ 5. [**Function Tool**](MAF/3.Function-Tool.ipynb) - Function 도구 사용법
 - 👤 6. [**Human In Loop 패턴**](MAF/4.Human-In-Loop.ipynb) - 휴먼 개입 패턴 구현
 - 📊 7. [**Structured Output**](MAF/5.Structured-Output.ipynb) - 구조화된 출력 생성
-- 🔌 8. [**Agent as Function**](MAF/6.Agent-as-function-tool.ipynb) - 에이전트를 Function 도구로 활용
-- 🔌 9. [**Agent with Middleware**](MAF/9.Agent-with-Middleware.ipynb) - 미들웨어 추가 및 활용
-- 📈 10. [**Observability**](MAF/8.Observability.ipynb) - 에이전트 관찰성(Observability) 구현
-- 💿 11. [**Persist and Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
+- 🔧 8. [**Agent as Function**](MAF/6.Agent-as-function-tool.ipynb) - 에이전트를 Function 도구로 활용
+- 🔌 9. [**Agent with MCP Tool**](MAF/7.Agent-as-MCP-tool.ipynb) - 에이전트를 MCP 도구로 활용(사용 및 제공)
+- 🔩 10. [**Agent with Middleware**](MAF/9.Agent-with-Middleware.ipynb) - 미들웨어 추가 및 활용
+- 📈 11. [**Observability**](MAF/8.Observability.ipynb) - 에이전트 관찰성(Observability) 구현
+- 💿 12. [**Persist and Resume**](MAF/10.Persist-and-Resume.ipynb) - 에이전트 상태 저장 및 복원
 ---
 
 **☁️ Microsoft Foundry Agent 통합**
 
-- 📢 12. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
-- 📱 13. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
-- 🚀 14. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
+- 📢 13. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
+- 📱 14. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
+- 🚀 15. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
 
 ---
 
 **🔄 워크플로우 실습**
 
-- 🔗 15. [**Workflow Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
-- 🔀 16. [**Simple Sequential Workflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
-- 🎭 17. [**Agents in Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
+- 🔗 16. [**Workflow Overview**](MAF/20.workflow.ipynb) - MAF 워크플로우 개념 및 구현
+- 🔀 17. [**Simple Sequential Workflow**](MAF/21.SimpleSequentialWorkflow.ipynb) - 간단한 순차 워크플로우 구현
+- 🎭 18. [**Agents in Workflow**](MAF/22.Agents-In-Workflow.ipynb) - 워크플로우에서 에이전트 사용하기
 
 ---
 
@@ -82,12 +81,12 @@ MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 �
 
 🎨 DevUI 사용
 
-- 🔮 18. [**DevUI**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
+- 🔮 19. [**DevUI**](MAF/DevUI/intro.ipynb) - DevUI: 에이전트 및 워크플로우 테스트 앱
 
 🧸 AG-UI를 활용한 서버/클라이언트 구축
 
-- 🧿 19. [**AG-UI: Build Server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
-- 🧿 20. [**AG-UI: CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
+- 🧿 20. [**AG-UI: Build Server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
+- 🧿 21. [**AG-UI: CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
 - 🧿 [**AG-UI: Build Client**](AG-UI/02.Build-client.ipynb) - AG-UI를 활용한 에이전트 클라이언트 만들기
 
 ---
