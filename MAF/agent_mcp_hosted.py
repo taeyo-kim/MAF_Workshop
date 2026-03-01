@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 async def basic_foundry_mcp_example():
-    """Basic example of Foundry agent with hosted MCP tools."""
+    """Hosted MCP 도구를 사용하는 Foundry 에이전트의 기본 예시"""
+    
     async with (
         AzureCliCredential() as credential,
         AzureAIAgentClient(credential=credential) as client,
@@ -24,21 +25,15 @@ async def basic_foundry_mcp_example():
         # Create agent with hosted MCP tool
         agent = client.as_agent(
             name="MicrosoftLearnAgent", 
-            instructions="당신은 Microsoft Learn 관련 내용은 MCP를 활용해서 질문에 답변합니다. MCP를 사용할 수 없는 질문은 모른다고 답변해야 합니다.",
+            instructions="당신은 Microsoft Learn 관련 내용은 MCP를 활용해서 질문에 답변합니다."
+                        +"MCP를 사용할 수 없는 질문은 모른다고 답변해야 합니다.",
             tools=learn_mcp,
         )
 
-        # Simple query without approval workflow
         session = agent.create_session()
         
-        # 첫 번째 질문
+        # 질문
         result = await agent.run("롱블랙이란 무엇인가요?", session=session)
-        print(result)
-
-        print("\n" + "=" * 60 + "\n")
-
-        # 두 번째 질문
-        result = await agent.run("Azure AI Search의 주요 기능은 무엇인가요?", session=session)
         print(result)
 
 if __name__ == "__main__":

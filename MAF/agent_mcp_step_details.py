@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 async def basic_foundry_mcp_example():
-    """Basic example of Foundry agent with hosted MCP tools."""
+    """Hosted MCP 도구를 사용하는 Foundry 에이전트의 기본 예시"""
+    
     async with (
         AzureCliCredential() as credential,
         AzureAIAgentClient(credential=credential) as client,
