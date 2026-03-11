@@ -27,7 +27,7 @@ agent = Agent(
 
 # Run the agent
 async def main() -> None:
-    result = await agent.run("해적에 대한 농담 하나 들려줘. 🏴‍☠️")
+    result = await agent.run("로봇에 대한 농담 하나 들려줘. 🤖")
     print(result.text)
 
 if __name__ == "__main__":
