@@ -37,7 +37,7 @@ agent-framework  (설치 편의용 메타 패키지)
 
 ```bash
 # 설치 (하위 패키지 자동 포함)
-pip install agent-framework==1.0.0b260130 --pre
+pip install agent-framework==1.0.0rc3 --pre
 
 # 완전 제거 (하위 패키지 명시 필요)
 pip uninstall -y agent-framework agent-framework-core agent-framework-azure-ai azure-ai-projects

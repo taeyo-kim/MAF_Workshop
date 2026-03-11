@@ -5,26 +5,26 @@
 
 ---
 
-## 🗺️ 전체 하이브리드 검색 파이프라인
+## 🗺️ 전체 검색 파이프라인
 
+![전체 하이브리드 검색 흐름](images/azure_search_query_pipeline.png)
+
+Azure AI Search의 질의 파이프라인은 **3개 레이어(L0 → L1 → L2)** 로 구성됩니다.
+
+| 레이어 | 단계 | 설명 |
+|---|---|---|
+| **L0: Query Preprocessing** | Query Rewriting | 입력된 쿼리를 두 경로로 분기 처리. Vectorization(벡터화)과 Text Analysis(텍스트 분석)를 병렬로 수행 |
+| **L1: Candidate Retrieval** | Vector Search + Keyword Search | 벡터 검색과 키워드 검색으로 각각 후보를 수집한 뒤, **Fusion(RRF)** 으로 두 결과 리스트를 순위 기반으로 병합 |
+| **L2: Ranking** | Semantic Ranking | RRF 병합 결과를 Cross-Encoder 기반 Semantic Ranker로 재정렬하여 최종 출력 생성 |
+
+최종 출력은 용도에 따라 세 가지 형태로 제공됩니다.
+- **Results for LLM**: RAG 파이프라인에서 LLM에 컨텍스트로 전달할 검색 결과
+- **Extractive Answers**: 문서 내 정답 구간을 직접 추출한 단답형 응답
+- **Contextualized Captions**: 각 결과에 대한 요약 캡션 (하이라이트 포함)
+
+### 예시 
 ![전체 하이브리드 검색 흐름](images/compeletedflow.png)
 
-```mermaid
-flowchart LR
-    Q([🙋 사용자 쿼리]) --> BM25["📄 BM25\n키워드 검색\n(Inverted Index)"]
-    Q --> VEC["🧠 벡터 검색\n(Embedding + HNSW)"]
-
-    BM25 -->|"순위 목록 A"| RRF["🔀 RRF\nReciprocal Rank Fusion"]
-    VEC  -->|"순위 목록 B"| RRF
-
-    RRF -->|"Top-N 후보"| RANK["⭐ Semantic Ranker\n(Cross-Encoder Re-ranking)"]
-    RANK --> OUT([✅ 최종 검색 결과])
-
-    style BM25  fill:#0078D4,color:#fff,stroke:none
-    style VEC   fill:#8764B8,color:#fff,stroke:none
-    style RRF   fill:#C239B3,color:#fff,stroke:none
-    style RANK  fill:#E74856,color:#fff,stroke:none
-```
 
 | 단계 | 역할 | 핵심 기술 |
 |---|---|---|
