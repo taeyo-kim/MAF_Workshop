@@ -19,6 +19,13 @@
 
 ---
 
+현재 리포를 Fork하거나 Clone하여 로컬에서 Visual Studio Code로 실습을 진행하실 수 있습니다.
+```bash
+git clone https://github.com/taeyo-kim/MAF_Workshop.git  
+cd MAF_Workshop
+code .
+```
+
 ## 📖 개요
 
 > **Microsoft Agent Framework (MAF) 실습 워크샵에 오신 것을 환영합니다!**
