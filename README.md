@@ -67,7 +67,7 @@ code .
 
 ### ☁️ Microsoft Foundry Agent 통합
 
-- 📢 13. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용
+- 📢 13. [**FoundryAgent 생성 및 활용**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용
 - 📱 14. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
 - 🤖 15. [**FoundryAgent와 MCP**](MAF/Foundry_Agent_MCP.ipynb) - Foundry Agent에서 Hosted MCP 도구 활용하기 
 - 🚀 16. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
