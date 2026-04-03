@@ -1,6 +1,6 @@
 import asyncio
 from agent_framework import Agent, MCPStreamableHTTPTool
-from agent_framework.azure import AzureAIAgentClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity.aio import AzureCliCredential
 from dotenv import load_dotenv
 
@@ -17,7 +17,7 @@ async def http_mcp_example():
             url="https://learn.microsoft.com/api/mcp",
         ) as mcp_server,
         Agent(
-            client=AzureAIAgentClient(credential=credential),
+            client=FoundryChatClient(credential=credential),
             name="DocsAgent",
             instructions="당신은 Microsoft Learn에 관한 질문에 도움을 주는 에이전트입니다.",
         ) as agent,

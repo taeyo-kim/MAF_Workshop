@@ -1,6 +1,6 @@
 import asyncio
 from agent_framework import Agent, MCPStdioTool
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity import AzureCliCredential
 from dotenv import load_dotenv
 
@@ -19,7 +19,7 @@ async def local_mcp_example():
         # 에이전트를 생성하며, mcp_server를 도구로 추가합니다. 
         # 또한, 에이전트는 Azure OpenAI Chat 모델을 사용하도록 설정되어 있습니다.
         Agent(
-            client=AzureOpenAIChatClient(credential=AzureCliCredential()),
+            client=FoundryChatClient(credential=AzureCliCredential()),
             name="MathAgent",
             instructions="당신은 유용한 수학 도우미입니다. 계산을 해결할 수 있습니다.",
             tools=mcp_server

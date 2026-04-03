@@ -1,6 +1,6 @@
 import asyncio
 from agent_framework import Agent
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity import AzureCliCredential
 from agent_framework.observability import configure_otel_providers
 from opentelemetry.sdk.trace.export import ConsoleSpanExporter
@@ -20,7 +20,7 @@ load_dotenv()  # .env 파일 로드
 
 # Create the agent - telemetry is automatically enabled
 agent = Agent(
-    client=AzureOpenAIChatClient(credential=AzureCliCredential()),
+    client=FoundryChatClient(credential=AzureCliCredential()),
     name="Joker",
     instructions="당신은 한국어로 농담을 잘하는 유쾌한 코미디언입니다. 😄🎭"
 )

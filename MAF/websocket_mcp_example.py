@@ -1,6 +1,6 @@
 import asyncio
 from agent_framework import Agent, MCPWebsocketTool
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity import AzureCliCredential
 from dotenv import load_dotenv
 
@@ -17,7 +17,7 @@ async def websocket_mcp_example():
             load_prompts=False,         # 서버가 prompts/list를 지원하지 않으므로 비활성화
         ) as mcp_server,
         Agent(
-            client=AzureOpenAIChatClient(credential=AzureCliCredential()),
+            client=FoundryChatClient(credential=AzureCliCredential()),
             name="RestaurantAgent",
             instructions="당신은 레스토랑에서 서빙을 제공하는 에이전트입니다.",
             tools=mcp_server

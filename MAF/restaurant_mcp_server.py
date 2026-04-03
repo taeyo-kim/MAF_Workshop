@@ -1,6 +1,6 @@
 
 from typing import Annotated
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity import AzureCliCredential
 from mcp.server.websocket import websocket_server
 import uvicorn
@@ -24,7 +24,7 @@ def get_item_price(
     return "$9.99"
 
 # RestaurantAgent 에이전트 생성 및 도구 제공
-agent = AzureOpenAIChatClient(credential=AzureCliCredential()).as_agent(
+agent = FoundryChatClient(credential=AzureCliCredential()).as_agent(
     name="RestaurantAgent",
     instructions="🍴당신은 메뉴에 대한 질문에 답변하는 레스토랑 에이전트입니다.",
     tools=[get_specials, get_item_price],
