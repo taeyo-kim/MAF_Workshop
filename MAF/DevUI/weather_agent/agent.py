@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Annotated
 
 from agent_framework import Agent
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from azure.identity import AzureCliCredential
 from pydantic import Field
 
@@ -45,7 +45,7 @@ def get_forecast(
 # Agent instance following Agent Framework conventions
 agent = Agent(
     name="FoundryWeatherAgent",
-    client=AzureOpenAIChatClient(
+    client=FoundryChatClient(
         credential=AzureCliCredential(),        
     ),
     instructions="""

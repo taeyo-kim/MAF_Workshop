@@ -18,9 +18,9 @@ import os
 from typing import Any
 
 from agent_framework import AgentExecutorResponse, WorkflowBuilder
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework.foundry import FoundryChatClient
 from pydantic import BaseModel
-from azure.identity import DefaultAzureCredential
+from azure.identity.aio import DefaultAzureCredential
 
 from dotenv import load_dotenv
 load_dotenv()  # .env 파일 로드
@@ -62,7 +62,7 @@ def is_approved(message: Any) -> bool:
 
 
 # Create Azure OpenAI chat client
-chat_client = AzureOpenAIChatClient(credential=DefaultAzureCredential())
+chat_client = FoundryChatClient(credential=DefaultAzureCredential())
 
 # Create Writer agent - generates content
 writer = chat_client.as_agent(
