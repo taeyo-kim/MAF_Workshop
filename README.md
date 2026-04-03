@@ -5,7 +5,7 @@
 ### Microsoft Agent Framework  실습 가이드
 
 [![Framework](https://img.shields.io/badge/Framework-MAF-blue?style=for-the-badge)](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)
-[![Status](https://img.shields.io/badge/Status-RC-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-GA-blue?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
 
 </div>
@@ -13,9 +13,10 @@
 ---
 ### **업데이트 정보**  
 
-**<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.03.04</span>**
+**<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.04.03</span>**
 
-📢 하기 실습 중 **21번** 까지는 모두 RC 버전에서 올바로 동작하는 것을 확인했습니다.    
+**📢 4월 3일 정식버전이 GA 되었지만, 기존 RC 버전과 다른 Breaking Change가 발생하여 하기 실습을 전면 재검토 중입니다. 현재 **6번** 까지는 올바로 동작하는 것을 확인했습니다.  
+6번 이후 실습은 현재 검토 및 수정 중에 있으며, 최대한 빠르게 업데이트할 예정입니다.** 
 
 ---
 
@@ -32,12 +33,8 @@ code .
 
 이 워크샵은 [Microsoft Learn의 공식 MAF 문서](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)를 기반으로 재구성되었습니다.
 
-### 💡 왜 이 워크샵이 필요한가요?
-
-MAF는 현재 **RC 단계**로, 공식 문서의 일부 코드가 올바르게 동작하지 않는 경우가 있습니다. 이 워크샵은 이러한 문제를 해결하고 실무에서 바로 적용 가능한 실습 환경을 제공합니다.
-
 > **⚠️ 중요 알림**  
-> 정식버전 출시 예정 : **2026년 3월 중순 추정** (일정 변경 가능)  
+> 정식버전 출시 : **2026년 4월 3일** 1.0.0 버전이 정식 출시되었습니다!
 > 정식 출시 후에는 [공식 문서](https://learn.microsoft.com/en-us/agent-framework/tutorials/overview)를 기준으로 실습을 진행하시길 권장합니다. 물론, 이 워크샵도 계속해서 유용한 참고 자료가 될 것입니다! (제가 업데이트를 한다면 말이죠 😉)
 
 ---
