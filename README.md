@@ -15,8 +15,8 @@
 
 **<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.04.03</span>**
 
-**📢 4월 3일 정식버전이 GA 되었지만, GA 버전에서도 RC 대비 일부 Breaking Change가 발생한 것으로 보이기에, 하기 실습을 전면 재검토 중입니다. 현재 **11번** 까지는 올바로 동작하는 것을 확인했습니다.  
-11번 이후 실습은 현재 검토 및 수정 중에 있으며, 최대한 빠르게 업데이트할 예정입니다.** 
+**📢 4월 3일 정식버전이 GA 되었지만, GA 버전에서도 RC 대비 일부 Breaking Change가 발생한 것으로 보이기에, 하기 실습을 전면 재검토 중입니다. 현재 **14번** 까지는 올바로 동작하는 것을 확인했습니다.  
+14번 이후 실습은 현재 검토 및 수정 중에 있으며, 최대한 빠르게 업데이트할 예정입니다.** 
 
 ---
 
@@ -67,7 +67,7 @@ code .
 
 ### ☁️ Microsoft Foundry Agent 통합
 
-- 📢 13. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용 (**Classic과 New Portal 모두 포함**)
+- 📢 13. [**AzureAIFoundryAgent**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용
 - 📱 14. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
 - 🤖 15. [**FoundryAgent와 MCP**](MAF/Foundry_Agent_MCP.ipynb) - Foundry Agent에서 Hosted MCP 도구 활용하기 
 - 🚀 16. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
