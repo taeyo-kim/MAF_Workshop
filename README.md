@@ -13,11 +13,9 @@
 ---
 ### **업데이트 정보**  
 
-**<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.04.05</span>**
+**<span style="color: #3708e0;">마지막 업데이트 날짜 : 2026.04.06</span>**
 
-**📢 4월 3일 정식버전이 GA 되었지만, GA 버전에서도 RC 대비 일부 Breaking Change가 발생한 것으로 보이기에, 하기 실습을 전면 재검토 중입니다. 현재 **20번** 까지는 올바로 동작하도록 수정을 완료했습니다.  
-20번 이후 실습은 현재 검토 및 수정 중에 있으며, 최대한 빠르게 업데이트할 예정입니다.** 
-
+**📢 4월 3일 정식버전이 GA 되었지만, GA 버전에서도 RC 대비 일부 Breaking Change가 발생한 것으로 보이기에, 하기 실습을 전면 업데이트 중입니다. 현재 **22번** 까지는 올바로 동작하도록 수정을 완료했습니다.
 ---
 
 현재 리포를 Fork하거나 Clone하여 로컬에서 Visual Studio Code로 실습을 진행하실 수 있습니다.
@@ -70,7 +68,7 @@ code .
 - 📢 13. [**FoundryAgent 생성 및 활용**](MAF/AzureAIFoundryAgent.ipynb) - Microsoft Foundry 기반 에이전트 생성 및 활용
 - 📱 14. [**배포된 Agent 활용**](MAF/Using-Published-Agent.ipynb) - 배포된 Foundry Agent 활용하기  
 - 🤖 15. [**FoundryAgent와 MCP**](MAF/Foundry_Agent_MCP.ipynb) - Foundry Agent에서 Hosted MCP 도구 활용하기 
-- 🚀 16. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (선택, Option)
+- 🚀 16. [**Hosted Agent 배포**](HostedAgent-Lab/Deploy-HostedAgent.ipynb) - Hosted Agent 배포하기 (공사 중)
 
 ---
 
@@ -92,7 +90,7 @@ code .
 
 - 🧿 21. [**AG-UI: Build Server**](AG-UI/01.Build-server.ipynb) - AG-UI를 활용한 에이전트 서버 생성 및 테스트
 - 🧿 22. [**AG-UI: CopilotKit**](AG-UI/03.CopilotKit.ipynb) - CopilotKit을 활용하여 빠르게 UI 제공하기
-- 🧿 [**AG-UI: Build Client**](AG-UI/02.Build-client.ipynb) - AG-UI를 활용한 에이전트 클라이언트 만들기
+- 🧿 [**AG-UI: Build Client**](AG-UI/02.Build-client.ipynb) - AG-UI를 활용한 에이전트 클라이언트 만들기 (준비 중)
 
 ---
 

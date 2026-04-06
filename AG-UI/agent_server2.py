@@ -5,7 +5,7 @@ from typing_extensions import Annotated
 from pydantic import Field
 import uvicorn
 from agent_framework import Agent
-from agent_framework.azure import AzureOpenAIChatClient
+from agent_framework_foundry import FoundryChatClient
 from agent_framework_ag_ui import add_agent_framework_fastapi_endpoint
 from azure.identity import AzureCliCredential
 from fastapi import FastAPI
@@ -14,18 +14,18 @@ from dotenv import load_dotenv
 load_dotenv()  # .env 파일 로드
 
 # Read required configuration
-endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
-deployment_name = os.environ.get("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
+endpoint = os.environ.get("FOUNDRY_PROJECT_ENDPOINT")
+deployment_name = os.environ.get("FOUNDRY_MODEL")
 
 if not endpoint:
-    raise ValueError("⚠️ AZURE_OPENAI_ENDPOINT 환경 변수가 필요합니다")
+    raise ValueError("⚠️ FOUNDRY_PROJECT_ENDPOINT 환경 변수가 필요합니다")
 if not deployment_name:
-    raise ValueError("⚠️ AZURE_OPENAI_CHAT_DEPLOYMENT_NAME 환경 변수가 필요합니다")
+    raise ValueError("⚠️ FOUNDRY_MODEL 환경 변수가 필요합니다")
 
-chat_client = AzureOpenAIChatClient(
+chat_client = FoundryChatClient(
     credential=AzureCliCredential(),
-    endpoint=endpoint,
-    deployment_name=deployment_name,
+    project_endpoint=endpoint,
+    model=deployment_name,
 )
 
 # Create the AI agent
